@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+COLOR=red
+echo "Color is $COLOR"
+
+echo "Enter a color:"
+read COLOR
+echo "Color is $COLOR"
+
+exit 0

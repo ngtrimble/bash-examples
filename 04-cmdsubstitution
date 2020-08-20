@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+#Command substitution, the output of ls is stored in LS as a variable
+LS=$(ls)
+
+echo $LS
+
+exit 0
