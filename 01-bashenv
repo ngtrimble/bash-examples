@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#This is a comment.
+echo "Running $BASH_VERSION"
+
+#To get the exit status of the last command
+echo "Last exit code $?"
+
+exit 0
+

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cp /var/log/messages /var/log/messages.old
+cat /dev/null > /var/log/messages
+echo "/var/log/messages copied and truncated"
+
+exit 0

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo "Getting list of internal commands..."
+
+help
+
+exit 0
