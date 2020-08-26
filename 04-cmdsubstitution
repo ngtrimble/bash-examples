@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
+#-x turns on tracing which makes debugging easier. This can also be done using 'bash -x SCRIPT'
+set -ex
 
-#Command substitution, the output of ls is stored in LS as a variable
+#Command substitution, the output of ls is stored in LS as a variable,
+#old method using `ls` is deprecated.
 LS=$(ls)
-
 echo $LS
+
+FILE=/tmp/asdf$(date +%y-%m-%d).txt
+touch $FILE
+rm $FILE 
 
 exit 0

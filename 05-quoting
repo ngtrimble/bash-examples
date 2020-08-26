@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -e
+
+BOB=bob
+
+echo 'This is strong quote, $BOB'
+echo "This is a weak quote, $BOB"
+
+echo 'Your \$PATH is $PATH'
+echo "Your \$PATH is $PATH"
+
+exit 0

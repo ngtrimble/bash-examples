@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -e
+
+echo "\$* gives $*"
+echo "\$# gives $#"
+echo "\$@ gives $@"
+echo "\$0 is $0"
+
+#This is a single string
+for i in "$*"
+do
+	echo $i
+done
+
+#This is an array
+for j in "$@"
+do
+	echo $j
+done
+
+exit 0
