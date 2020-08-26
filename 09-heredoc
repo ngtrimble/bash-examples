@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -e
+
+#Use cat to stdout with a formatted heredoc
+cat <<EOF
+	Here's a doc
+that has pre-formatted
+  text
+EOF
+
+#Write a file to stdout and to a temporary file
+TMP=$(mktemp)
+tee <<EOF $TMP 
+aaaaaaaaa
+bbbb
+cc
+d
+EOF
+
+rm $TMP
+
+exit 0
