@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Use -f to flush be buffer so that echo's get written before script exits.
+set -ef
+
+ANIMAL='cow'
+[[ $ANIMAL=='^[a-z]*' ]] || echo "$ANIMAL does not start with a letter"
+echo $ANIMAL
+
+exit 0
