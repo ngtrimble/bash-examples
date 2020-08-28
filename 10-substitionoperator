@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -e
+
+#${VAR:-word}: if $VAR exists, use its value, if not, return the value word. This does not set the variable.
+echo ${VAR:-word}
+
+#${var:=word}: if $VAR exists, use its value, if not set the value to word
+echo ${VAR:=word}
+
+#${VAR:?message}: if $VAR exists, show its value. If not, display VAR followed by message. If message is omitted, 
+#the message VAR: #parameter null or not set will be shown
+echo ${NOVAR:?not found}
+
+#${VAR:offset:length}: if $VAR exists show the substring of $VAR, starting at offset with a length of length
+echo ${VAR:0:2}
+
