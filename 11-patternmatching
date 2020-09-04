@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -e
+
+FILENAME=/usr/bin/blah
+
+#Remove the shortest match of '*/' starting from the beginning
+echo ${FILENAME#*/}
+
+#Remove the longest match of '*/' starting from the beginning
+echo ${FILENAME##*/}
+
+#Remove the shorest match of '/*' starting from the end
+echo ${FILENAME%/*}
+
+#Remove the longest match of '/*' starting from the end
+echo ${FILENAME%%/*}
+

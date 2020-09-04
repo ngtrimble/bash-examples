@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+
+#Internal calculation
+echo $(( 1 + 1 ))
+
+#External calculation
+let X="1 + 3"
+echo $X
+
+echo "scale=9; 10/3" | bc
