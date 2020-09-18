@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e
+
+echo $PWD
+
+pushd ~
+pushd /tmp
+popd
+
+# Oops, forgot to popd twice
+# pushd to the bottom of the stack and then clear the stack, no fuss you're back to where you began
+pushd -0 && dirs -c
+
+echo $PWD
